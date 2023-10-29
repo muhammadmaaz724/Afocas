@@ -362,13 +362,10 @@ print(predictions)
 # In[46]:
 
 
-# Load the 'test.csv' dataset into a DataFrame
+
 df = pd.read_csv('test.csv')
 
-# Replace the 'Price' column with your predicted values
-# Suppose 'prediction' is a NumPy array or a list of predicted values
-# Make sure the length of 'prediction' matches the number of rows in your DataFrame
-# Replace with your actual predictions
+
 
 df['Price'] = predictions
 
@@ -382,8 +379,7 @@ df.head()
 # In[48]:
 
 
-# Save the modified DataFrame back to 'test.csv'
-df.to_csv('test.csv', index=False)  # index=False to avoid saving the index column
+df.to_csv('test.csv', index=False)
 
 
 # In[ ]:
